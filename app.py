@@ -1,7 +1,7 @@
 from flask import Flask, render_template_string, request, jsonify
-from keras.applications import VGG16
-from keras.preprocessing import image
-from keras.applications.vgg16 import preprocess_input, decode_predictions
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
 import numpy as np
 import os
 from werkzeug.utils import secure_filename
